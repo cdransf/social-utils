@@ -3,10 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postcss:main": "postcss src/styles/main.css --map false --use postcss-import cssnano --dir public/static/styles",
-    "postcss:fira": "postcss src/styles/fira.css --map false --use postcss-import cssnano --dir public/static/styles",
-    "postcss:watch": "postcss src/styles/main.css --map false --use postcss-import cssnano --dir public/static/styles --watch",
-    "postcss:build": "yarn postcss:main && yarn postcss:fira",
+    "postcss:build": "postcss src/styles/* --map false --use postcss-import cssnano --dir public/static/styles",
+    "postcss:watch": "yarn postcss:build --watch",
     "uglify:media": "uglifyjs --compress --mangle -- src/scripts/music.js src/scripts/reading.js > public/static/scripts/media.js",
     "uglify:webmentions": "uglifyjs --compress --mangle -- src/scripts/webmentions.js > public/static/scripts/webmentions.js",
     "uglify:highlight": "uglifyjs --compress --mangle -- src/scripts/highlight.js > public/static/scripts/highlight.js",
@@ -16,7 +14,8 @@
     "dev": "yarn postcss:build && yarn uglify:build && next dev",
     "build": "yarn submodules:clone:all && next build && yarn postcss:build && yarn uglify:build",
     "start": "next start",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pull": "./scripts/git.sh"
   },
   "dependencies": {
     "@extractus/feed-extractor": "^6.2.1",
