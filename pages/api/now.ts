@@ -203,7 +203,7 @@ export default async function handler(req: any, res: any) {
         },
         body: JSON.stringify({
           content: nowResponseToMarkdown({
-            now,
+            now: now as { now: { about: string; making: string } },
             books,
             movies,
             tv,
