@@ -1,0 +1,10 @@
+name: manual-job
+on: [workflow_dispatch]
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manual-job
+        run: |
+          curl -X POST 'https://utils.coryd.dev/api/now' \
+          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'

@@ -1,0 +1,12 @@
+name: scheduled-cron-job
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: scheduled-cron-job
+        run: |
+          curl -X POST 'https://utils.coryd.dev/api/now' \
+          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'

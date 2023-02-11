@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "omg.lol Icons";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("https://utils.coryd.dev/static/fonts/omg.lol-icons.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "omg.lol";
+  src: url("data:font/woff2;charset=utf-8;base64,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")
+    format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root,
+:host {
+  --omg-font-regular: normal 900 1em/1 "omg.lol Icons";
+}
+
+:root {
+  --background-color: #282a36;
+  --main-color: #44475a;
+  --forground: #f8f8f2;
+  --comment: #6272a4;
+  --cyan: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--purple);
+  color: var(--forground);
+}
+
+.omg-icon {
+  font-family: "omg.lol Icons";
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.omg-li {
+  left: calc(var(--omg-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--omg-li-width, 2em);
+  line-height: inherit;
+}
+
+body {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 2em;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  background: var(--background-color);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  overflow-wrap: break-word;
+  color: var(--forground);
+}
+
+main {
+  display: block;
+  max-width: 30em;
+  border-radius: 1em;
+  margin: 0 auto;
+  background: var(--main-color);
+  padding: 2em;
+}
+
+h1 {
+  margin: 0;
+}
+
+.color-cyan {
+  color: var(--cyan);
+}
+
+.color-green {
+  color: var(--green);
+}
+
+.color-orange {
+  color: var(--orange);
+}
+
+.color-pink {
+  color: var(--pink);
+}
+
+.color-purple {
+  color: var(--purple);
+}
+
+.color-red {
+  color: var(--red);
+}
+
+.color-yellow {
+  color: var(--yellow);
+}
+
+small {
+  font-size: 60%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+#profile-picture-container {
+  margin: auto;
+  color: var(--main-color);
+  margin-bottom: 1em;
+}
+
+#profile-picture {
+  border-radius: 0.25em;
+  height: 8.7em;
+}
+
+h1#name a i.fa-badge-check,
+.omg-verified {
+  color: var(--purple) !important;
+}
+
+.omg-verified:before {
+  content: "\e063";
+}
+
+ul {
+  text-align: left;
+  padding-left: 0;
+}
+
+li {
+  line-height: 170%;
+  margin-left: 2.5em;
+}
+
+#verification {
+  font-size: 80%;
+  color: #0089cf;
+}
+
+#now {
+  margin-top: 2em;
+  text-align: left !important;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--comment);
+  margin: 1.5em 0;
+}
+
+a:link,
+a:visited {
+  color: var(--forground);
+  text-decoration-color: var(--forground);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--comment);
+}
+a:hover,
+a:active {
+  color: var(--forground);
+  text-decoration-color: var(--forground);
+  text-decoration: none;
+  border-bottom: 2px solid var(--comment);
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 1em;
+    padding: 1em;
+  }
+  main {
+    padding: 1.5em;
+  }
+}
+
+.prami-body {
+  fill: #ff69ad;
+}
+
+.prami-left-eye,
+.prami-right-eye {
+  fill: #461036;
+}
+
+.prami-left-eye-pupil,
+.prami-right-eye-pupil {
+  stroke: #461036;
+}
+
+.prami-left-cheek,
+.prami-right-cheek {
+  fill: #e34198;
+}
+
+.prami-mouth {
+  stroke: #461036;
+}
+
+#prami {
+  width: 2em;
+}
+
+.logotype {
+  color: #f783ac;
+  font-family: "omg.lol";
+}
+
+#footer {
+  margin: 0;
+  margin-top: 5em;
+  font-size: 90%;
+  font-weight: 300;
+  color: var(--comment);
+}
+
+#footer a:link,
+#footer a:visited,
+#footer a:hover,
+#footer a:active {
+  color: var(--comment);
+  text-decoration: none;
+  border: 0;
+}
