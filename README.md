@@ -1,6 +1,8 @@
-![utils.coryd.dev](/public/static/images/social-card.png)
+![Cory Dransfeldt • Social utilities](/public/static/images/social-card.png)
 
-### utils.coryd.dev
+### Social utilities
+
+[![scheduled-cron-job](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
 
 Utilities running on Vercel that support functionality on [coryd.dev](https://coryd.dev), namely:
 
