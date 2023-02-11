@@ -1,4 +1,6 @@
-export const listsToMarkdown = (data: any) => {
+import { NowData } from "@/types/api";
+
+export const listsToMarkdown = (data: string[]) => {
   return data
     .map((d: string) => {
       return `- ${d}`;
@@ -6,7 +8,7 @@ export const listsToMarkdown = (data: any) => {
     .join("\n");
 };
 
-export const nowResponseToMarkdown = (data: any) => {
+export const nowResponseToMarkdown = (data: NowData) => {
   return `{profile-picture}
 
 # Cory Dransfeldt
