@@ -97,6 +97,10 @@ module.exports = withBundleAnalyzer({
         destination: "/static/images/:path",
       },
       {
+        source: "/images/:path*",
+        destination: "/static/images/:path*",
+      },
+      {
         source: "/media/:path*",
         destination: "/static/images/media/:path*",
       },
