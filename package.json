@@ -15,7 +15,7 @@
     "build": "yarn submodules:clone:all && next build && yarn postcss:build && yarn uglify:build",
     "start": "next start",
     "prepare": "husky install",
-    "pull": "./scripts/git.sh"
+    "pull": "./scripts/git-pull.sh"
   },
   "dependencies": {
     "@extractus/feed-extractor": "^6.2.1",
