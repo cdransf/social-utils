@@ -4,9 +4,6 @@
 [submodule "src/scripts"]
 	path = src/scripts
 	url = git@github.com:cdransf/social-utils-scripts.git
-[submodule "styles"]
-	path = styles
-	url = git@github.com:cdransf/social-utils-styles.git
 [submodule "src/styles"]
 	path = src/styles
 	url = git@github.com:cdransf/social-utils-styles.git

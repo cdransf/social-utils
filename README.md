@@ -14,10 +14,10 @@ Utilities running on Vercel that support functionality on [coryd.dev](https://co
 
 Git submodules are used to split out different assets from the core application. Links to the submodules are below, with the exception of `Media` which is a private submodule. `Media` is fetched at build time using [vercel-submodules](https://github.com/junhoyeo/vercel-submodules).
 
-- [Scripts](https://github.com/cdransf/social-utils-scripts)
-- [Styles](https://github.com/cdransf/social-utils-styles)
-- [Assets](https://github.com/cdransf/social-utils-image-assets)
-- Media
+- [Scripts](https://github.com/cdransf/social-utils-scripts): `src/scripts`
+- [Styles](https://github.com/cdransf/social-utils-styles): `src/styles`
+- [Assets](https://github.com/cdransf/social-utils-image-assets): `public/static/images/assets`
+- Media: `public/static/images/media`
 
 ---
 
