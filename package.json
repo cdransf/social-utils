@@ -12,10 +12,9 @@
     "submodules:clone:all": "npx vercel-submodules --all",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "dev": "yarn postcss:build && yarn uglify:build && next dev",
-    "build": "yarn submodules:clone:all && next build && yarn postcss:build && yarn uglify:build",
+    "build": "yarn submodules:clone:all && yarn postcss:build && yarn uglify:build && next build",
     "start": "next start",
-    "prepare": "husky install",
-    "pull": "./scripts/git-pull.sh"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@extractus/feed-extractor": "^6.2.1",
