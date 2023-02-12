@@ -1,4 +1,4 @@
-![Cory Dransfeldt • Social utilities](/public/static/images/social-card.png)
+![Cory Dransfeldt • Social utilities](/public/static/images/assets/social-card.png)
 
 # Social utilities
 

@@ -10,3 +10,6 @@
 [submodule "src/styles"]
 	path = src/styles
 	url = git@github.com:cdransf/social-utils-styles.git
+[submodule "public/static/images/assets"]
+	path = public/static/images/assets
+	url = git@github.com:cdransf/social-utils-image-assets.git
