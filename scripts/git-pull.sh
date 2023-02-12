@@ -1,5 +1,5 @@
 #!/bin/sh
-SUBMODULES=('public/static/images/media')
+SUBMODULES=('public/static/images/media' 'src/scripts')
 git pull
 # && cd $SUBMODULE_MEDIA && git pull;
 for i in "${SUBMODULES}"

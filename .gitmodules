@@ -1,3 +1,6 @@
 [submodule "public/static/images/media"]
 	path = public/static/images/media
 	url = git@github.com:cdransf/social-utils-media.git
+[submodule "src/scripts"]
+	path = src/scripts
+	url = git@github.com:cdransf/social-utils-scripts.git
