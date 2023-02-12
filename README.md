@@ -1,5 +1,3 @@
-![Cory Dransfeldt • Social utilities](/public/static/images/assets/social-card.png)
-
 # Social utilities
 
 [![scheduled-cron-job](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
