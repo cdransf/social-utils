@@ -194,15 +194,6 @@ export default function Uses() {
             </li>
             <li>
               <Link
-                href="https://flotato.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Flotato
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="https://magnet.crowdcafe.com"
                 target="_blank"
                 rel="noopener noreferrer"
