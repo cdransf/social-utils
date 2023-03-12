@@ -1,6 +1,6 @@
 # Social utilities
 
-[![scheduled-cron-job](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
+[![scheduled-syndication](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
 
 Utilities running on Vercel that support functionality on other web properties, namely:
 
