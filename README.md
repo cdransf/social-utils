@@ -2,22 +2,10 @@
 
 [![scheduled-cron-job](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
 
-Utilities running on Vercel that support functionality on [coryd.dev](https://coryd.dev), namely:
+Utilities running on Vercel that support functionality on other web properties, namely:
 
-- Static pages intended to match the look and feel of coryd.dev
 - Server side APIs used to source, modify and combine data from other services
 - Serving static assets and scripts
-
----
-
-## Submodules
-
-Git submodules are used to split out different assets from the core application. Links to the submodules are below, with the exception of `Media` which is a private submodule. `Media` is fetched at build time using [vercel-submodules](https://github.com/junhoyeo/vercel-submodules).
-
-- [Scripts](https://github.com/cdransf/social-utils-scripts): `src/scripts`
-- [Styles](https://github.com/cdransf/social-utils-styles): `src/styles`
-- [Assets](https://github.com/cdransf/social-utils-image-assets): `public/static/images/assets`
-- Media: `public/static/images/media`
 
 ---
 
