@@ -1,12 +1,12 @@
-name: scheduled-cron-job
+name: scheduled-syndication
 on:
-  schedule:
-    - cron: "0 */8 * * *"
+    schedule:
+        - cron: '0 * * * *'
 jobs:
-  cron:
-    runs-on: ubuntu-latest
-    steps:
-      - name: scheduled-cron-job
-        run: |
-          curl -X POST 'https://utils.coryd.dev/api/now' \
-          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+    cron:
+        runs-on: ubuntu-latest
+        steps:
+            - name: scheduled-syndication
+              run: |
+                  curl -X POST 'https://coryd.dev/api/syndicate' \
+                  -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'

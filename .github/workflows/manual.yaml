@@ -1,10 +1,10 @@
-name: manual-job
+name: manual-syndication
 on: [workflow_dispatch]
 jobs:
-  cron:
-    runs-on: ubuntu-latest
-    steps:
-      - name: manual-job
-        run: |
-          curl -X POST 'https://utils.coryd.dev/api/now' \
-          -H 'Authorization: Bearer ${{ secrets.ACTION_KEY }}'
+    cron:
+        runs-on: ubuntu-latest
+        steps:
+            - name: manual-syndication
+              run: |
+                  curl -X POST 'https://coryd.dev/api/syndicate' \
+                  -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'
