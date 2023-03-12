@@ -1,6 +1,6 @@
 import { extract } from "@extractus/feed-extractor";
 import siteMetadata from "@/data/siteMetadata";
-import { Albums, Artists, Status, TransformedRss } from "@/types/api";
+import { Albums, Artists, TransformedRss } from "@/types/api";
 import { Tracks } from "@/types/api/tracks";
 
 export default async function loadNowData(endpoints?: string) {
@@ -11,24 +11,12 @@ export default async function loadNowData(endpoints?: string) {
   let host = siteMetadata.siteUrl;
   if (env === "development") host = "http://localhost:3000";
 
-  let statusJson = null;
   let artistsJson = null;
   let albumsJson = null;
   let booksJson = null;
   let moviesJson = null;
   let tvJson = null;
   let currentTrackJson = null;
-
-  // status
-  if ((endpoints && selectedEndpoints.includes("status")) || !endpoints) {
-    const statusUrl = "https://api.omg.lol/address/cory/statuses/";
-    statusJson = await fetch(statusUrl)
-      .then((response) => response.json())
-      .catch((error) => {
-        console.log(error);
-        return {};
-      });
-  }
 
   // artists
   if ((endpoints && selectedEndpoints.includes("artists")) || !endpoints) {
@@ -93,7 +81,6 @@ export default async function loadNowData(endpoints?: string) {
   }
 
   const res: {
-    status?: Status;
     artists?: Artists;
     albums?: Albums;
     books?: TransformedRss;
@@ -101,7 +88,6 @@ export default async function loadNowData(endpoints?: string) {
     tv?: TransformedRss;
     currentTrack?: Tracks;
   } = {};
-  if (statusJson) res.status = statusJson.response.statuses.splice(0, 1)[0];
   if (artistsJson) res.artists = artistsJson?.topartists.artist;
   if (albumsJson) res.albums = albumsJson?.topalbums.album;
   if (booksJson) res.books = booksJson?.entries;
