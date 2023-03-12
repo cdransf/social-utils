@@ -27,10 +27,26 @@ This API returns the books I'm currently reading on [Oku](https://oku.club), tra
 
 This API returns the movies I've recently logged on [Letterboxd](https://letterboxd.com), transformed from the RSS feed available on my profile.
 
+### [Movies](pages/api/music.ts)
+
+| Request type | URI          | Params                                                                |
+| ------------ | ------------ | --------------------------------------------------------------------- |
+| `GET`        | `/api/music` | `{ type?: string; limit?: string; format?: string; period?: string }` |
+
+This API returns the music I've recently listened to and scrobbled to [Last.fm](https://last.fm). It supports several parameters, namely `type` which is used to determine what whether albums, artists or tracks are returned. The `limit` parameter controls the number of entries in te response. The `format` parameter controls the response format (XML or JSON) and the `period` parameter controls the time period covered in the response.
+
 ### [TV](pages/api/tv.ts)
 
 | Request type | URI       | Params |
 | ------------ | --------- | ------ |
 | `GET`        | `/api/tv` | None   |
 
-This API returns the TV episodes I've recently logged on [Trakt](https://trakt.tv), transformed from the RSS feed available on the recently watched section of my profile.
+This API returns the tv episodes I've recently logged on [Trakt](https://trakt.tv) fetched from their API.
+
+### [Webmentions](pages/api/webmentions.ts)
+
+| Request type | URI       | Params               |
+| ------------ | --------- | -------------------- |
+| `GET`        | `/api/tv` | `{ target: string }` |
+
+This returns webmentions for a given post on my site, with the `target` parameter accepting a url for the target post.
