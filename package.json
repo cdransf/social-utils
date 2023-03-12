@@ -33,7 +33,7 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "12.0.9",
+    "@next/bundle-analyzer": "13.2.4",
     "cssnano": "^5.1.14",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0",
