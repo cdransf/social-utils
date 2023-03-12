@@ -110,6 +110,16 @@ module.exports = withBundleAnalyzer({
       },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "https://coryd.dev",
+        permanent: true,
+        basePath: false,
+      },
+    ];
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,

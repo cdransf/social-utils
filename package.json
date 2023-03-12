@@ -1,19 +1,13 @@
 {
   "name": "coryd.dev-utils",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "postcss:build": "postcss src/styles/* --map false --use postcss-import cssnano --dir public/static/styles",
-    "postcss:watch": "yarn postcss:build --watch",
-    "uglify:media": "uglifyjs --compress --mangle -- src/scripts/music.js src/scripts/reading.js > public/static/scripts/media.js",
-    "uglify:webmentions": "uglifyjs --compress --mangle -- src/scripts/webmentions.js > public/static/scripts/webmentions.js",
-    "uglify:highlight": "uglifyjs --compress --mangle -- src/scripts/highlight.js > public/static/scripts/highlight.js",
-    "uglify:build": "yarn uglify:media && yarn uglify:webmentions && yarn uglify:highlight",
-    "submodules:clone:all": "npx vercel-submodules --all",
+    "dev": "next dev",
+    "build": "next build && node ./scripts/generate-sitemap",
+    "serve": "next start",
+    "analyze": "ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "dev": "yarn postcss:build && yarn uglify:build && next dev",
-    "build": "yarn submodules:clone:all && yarn postcss:build && yarn uglify:build && next build",
-    "start": "next start",
     "prepare": "husky install"
   },
   "dependencies": {
