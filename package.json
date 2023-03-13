@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@extractus/feed-extractor": "^6.2.1",
-    "@next/font": "13.1.1",
+    "@next/font": "13.2.4",
     "@types/js-yaml": "^4.0.5",
     "@types/node": "18.11.18",
     "@types/react": "18.0.28",
