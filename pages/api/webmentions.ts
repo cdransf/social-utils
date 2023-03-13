@@ -6,8 +6,6 @@ export default async function handler(
   res: NextApiResponse
 ) {
   res.setHeader("Cache-Control", "s-maxage=3600, stale-while-revalidate");
-
-  const target = req.query.target;
-  const response = await loadWebmentions(target?.toString());
+  const response = await loadWebmentions();
   res.json(response);
 }
