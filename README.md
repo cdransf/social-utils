@@ -2,10 +2,7 @@
 
 [![scheduled-syndication](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml/badge.svg)](https://github.com/cdransf/social-utils/actions/workflows/scheduled.yaml)
 
-Utilities running on Vercel that support functionality on other web properties, namely:
-
-- Server side APIs used to source, modify and combine data from other services
-- Serving static assets and scripts
+Server side APIs used to source, modify and combine data from other services.
 
 ---
 
