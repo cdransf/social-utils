@@ -6,5 +6,5 @@ jobs:
         steps:
             - name: manual-syndication
               run: |
-                  curl -X POST 'https://coryd.dev/api/syndicate' \
+                  curl -X POST 'https://utils.coryd.dev/api/syndicate' \
                   -H 'Authorization: Bearer ${{ secrets.VERCEL_SYNDICATE_KEY }}'
