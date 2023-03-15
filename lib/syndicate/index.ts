@@ -1,6 +1,6 @@
 import { toPascalCase } from "@/utils/formatters";
 import { extract, FeedEntry } from "@extractus/feed-extractor";
-import { SERVICES, TAGS } from "./config";
+import { PROMPTS, SERVICES, TAGS } from "./config";
 import createMastoPost from "./createMastoPost";
 
 export default async function syndicate(init?: string) {
@@ -78,8 +78,11 @@ export default async function syndicate(init?: string) {
         } else {
           tags = TAGS[service];
         }
+        const prompt = PROMPTS[service];
         existingContent[service].push(entries[0].id);
-        createMastoPost(`${entries[0].title} ${entries[0].link} ${tags}`);
+        createMastoPost(
+          `${prompt} ${entries[0].title} ${entries[0].link} ${tags}`
+        );
         await fetch(
           `https://api.github.com/gists/${GIST_ID_SYNDICATION_CACHE}`,
           {
